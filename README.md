@@ -3,7 +3,7 @@ This is a little project that I trying to build a blog using the amber framework
 
 And by the way sorry for the unoriginal name, I will think about it later, first I need it to be functional. 
 
-This is a project written using [Amber](https://amberframework.org). Enjoy!
+![Amber Framework](https://img.shields.io/badge/using-amber_framework-orange.svg)](https://amberframework.org/)
 
 ## Getting Started
 

@@ -20,3 +20,5 @@
               == link_to("read", "/posts/#{post.id}", class: "btn btn-primary btn-sm")
               == link_to("edit", "/posts/#{post.id}/edit", class: "btn btn-success btn-sm")
               == link_to("delete", "/posts/#{ post.id }?_csrf=#{csrf_token}", "data-method": "delete", "data-confirm": "Are you sure?", class: "btn btn-danger btn-sm")
+
+.
