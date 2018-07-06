@@ -1,7 +1,7 @@
 # blog
 This is a little project that I trying to build a blog using the amber framework which I discovered recently and I found it lovely. Currently the project's purpose is to learn more about the framework and maybe even develop my own blog ( That I'll actually would update LOL). 
 
-And by
+And by the way sorry for the unoriginal name, I will think about it later, first I need it to be functional. 
 
 This is a project written using [Amber](https://amberframework.org). Enjoy!
 
