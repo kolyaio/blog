@@ -1,6 +1,7 @@
 # blog
+This is a little project that I trying to build a blog using the amber framework which I discovered recently and I found it lovely. Currently the project's purpose is to learn more about the framework and maybe even develop my own blog ( That I'll actually would update LOL). 
 
-[![Amber Framework](https://img.shields.io/badge/using-amber_framework-orange.svg)](https://amberframework.org)
+And by
 
 This is a project written using [Amber](https://amberframework.org). Enjoy!
 
@@ -47,4 +48,4 @@ crystal spec
 
 ## Contributors
 
-- [your-github-user](https://github.com/your-github-user) Nikolai Ilushko - creator, maintainer
+- [kolyaio](https://github.com/kolyaio) Nikolai Ilushko - creator, maintainer
