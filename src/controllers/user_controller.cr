@@ -4,11 +4,11 @@ class UserController < ApplicationController
   end
 
   def show
-    render("show.slang") if (user = current_user)
+    render("show.ecr") if (user = current_user)
   end
 
   def edit
-    render("edit.slang") if (user = current_user)
+    render("edit.ecr") if (user = current_user)
   end
 
   def update
@@ -18,7 +18,7 @@ class UserController < ApplicationController
       redirect_to "/profile"
     elsif user
       flash[:danger] = "Could not update Profile!"
-      render("edit.slang")
+      render("edit.ecr")
     else
       flash[:info] = "Must be logged in"
       redirect_to "/signin"

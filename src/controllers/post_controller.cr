@@ -1,7 +1,7 @@
 class PostController < ApplicationController
   def index
     posts = Post.all
-    render("index.slang")
+    render("index.ecr")
   end
 
   def indexPost 
@@ -10,7 +10,7 @@ class PostController < ApplicationController
 
   def show
     if post = Post.find params["id"]
-      render("show.slang")
+      render("show.ecr")
     else
       flash["warning"] = "Post with ID #{params["id"]} Not Found"
       redirect_to "/posts"
@@ -19,7 +19,7 @@ class PostController < ApplicationController
 
   def new
     post = Post.new
-    render("new.slang")
+    render("new.ecr")
   end
 
   def create
@@ -30,13 +30,13 @@ class PostController < ApplicationController
       redirect_to "/posts"
     else
       flash["danger"] = "Could not create Post!"
-      render("new.slang")
+      render("new.ecr")
     end
   end
 
   def edit
     if post = Post.find params["id"]
-      render("edit.slang")
+      render("edit.ecr")
     else
       flash["warning"] = "Post with ID #{params["id"]} Not Found"
       redirect_to "/posts"
@@ -51,7 +51,7 @@ class PostController < ApplicationController
         redirect_to "/posts"
       else
         flash["danger"] = "Could not update Post!"
-        render("edit.slang")
+        render("edit.ecr")
       end
     else
       flash["warning"] = "Post with ID #{params["id"]} Not Found"

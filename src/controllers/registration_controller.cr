@@ -1,7 +1,7 @@
 class RegistrationController < ApplicationController
   def new
     user = User.new
-    render("new.slang")
+    render("new.ecr")
   end
 
   def create
@@ -14,7 +14,7 @@ class RegistrationController < ApplicationController
       redirect_to "/"
     else
       flash["danger"] = "Could not create User!"
-      render("new.slang")
+      render("new.ecr")
     end
   end
 
