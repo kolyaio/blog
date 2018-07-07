@@ -1,11 +1,8 @@
 class PostController < ApplicationController
+
   def index
     posts = Post.all
     render("index.ecr")
-  end
-
-  def indexPost 
-    redirect_to "/"
   end
 
   def show
@@ -13,7 +10,7 @@ class PostController < ApplicationController
       render("show.ecr")
     else
       flash["warning"] = "Post with ID #{params["id"]} Not Found"
-      redirect_to "/posts"
+      redirect_to "/"
     end
   end
 
@@ -27,7 +24,7 @@ class PostController < ApplicationController
 
     if post.valid? && post.save
       flash["success"] = "Created Post successfully."
-      redirect_to "/posts"
+      redirect_to "/"
     else
       flash["danger"] = "Could not create Post!"
       render("new.ecr")
@@ -39,7 +36,7 @@ class PostController < ApplicationController
       render("edit.ecr")
     else
       flash["warning"] = "Post with ID #{params["id"]} Not Found"
-      redirect_to "/posts"
+      redirect_to "/"
     end
   end
 
@@ -48,7 +45,7 @@ class PostController < ApplicationController
       post.set_attributes(post_params.validate!)
       if post.valid? && post.save
         flash["success"] = "Updated Post successfully."
-        redirect_to "/posts"
+        redirect_to "/"
       else
         flash["danger"] = "Could not update Post!"
         render("edit.ecr")
@@ -65,7 +62,7 @@ class PostController < ApplicationController
     else
       flash["warning"] = "Post with ID #{params["id"]} Not Found"
     end
-    redirect_to "/posts"
+    redirect_to "/"
   end
 
   def post_params

@@ -1,34 +1,19 @@
-<div class="row">
-  <div class="col-sm-11">
-    <h2>Posts</h2>
-  </div>
-  <div class="col-sm-1">
-    <a class="btn btn-success btn-sm" href="/posts/new">New</a>
-  </div>
+<div> 
+  <%= link_to("New Post", "/posts/new", class: "btn btn-success btn-sm") -%>
 </div>
 
-<div class="table-responsive">
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Body</th>
-        <th>Actions</th>
-      </tr>
-    <tbody>
-    <%- posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.body %></td>
-        <td>
-          <span>
-            <%= link_to("read", "/posts/#{post.id}", class: "btn btn-primary btn-sm") -%>
-            <%= link_to("edit", "/posts/#{post.id}/edit", class: "btn btn-success btn-sm") -%>
-            <%= link_to("delete", "/posts/#{post.id}?_csrf=#{csrf_token}", "data-method": "delete", "data-confirm": "Are you sure?", class: "btn btn-danger btn-sm") -%>
-          </span>
-        </td>
-      </tr>
-    <%- end %>
-    </tbody>
-  </table>
-</div>
+<%- posts.each do |post| %>
+  <div class="blog-post">
+    <h2 class="blog-post-title">
+      <%= link_to("#{post.title}", "/posts/#{post.id}") -%>
+    </h2>
+    <p class="blog-post-meta">January 1, 2014</p>
+    <%=post.body %>
+  </div><!-- /.blog-post -->
+
+  <hr> 
+  <div class="text-right">
+    <%= link_to("Edit", "/posts/#{post.id}/edit", class: "btn btn-success btn-sm") -%>
+    <%= link_to("Delete", "/posts/#{post.id}?_csrf=#{csrf_token}", "data-method": "delete", "data-confirm": "Are you sure?", class: "btn btn-danger btn-sm") -%>
+  </div>
+<%- end %>
