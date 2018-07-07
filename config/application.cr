@@ -29,7 +29,7 @@ Amber::Server.configure do |settings|
   # Name: A name that identifies this application. This is not internally
   # used by the framework.
   #
-  # settings.name = "Blog web application."
+  settings.name = "Blog in Amber"
   #
   #
   # Colorize Logging: specifies whether or not to use ANSI color codes
