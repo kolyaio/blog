@@ -4,6 +4,7 @@ class ApplicationController < Amber::Controller::Base
   include JasperHelpers
   LAYOUT = "application.ecr"
 
+
   def current_user
     context.current_user
   end
@@ -17,5 +18,10 @@ class ApplicationController < Amber::Controller::Base
       flash[:info] = "Must be logged in"
       redirect_to "/signin"
     end
+  end
+
+  private def format_date( date : Time | Nil )
+    t = Time.parse("2018-07-06 16:00:57 UTC", "%F %T %z");
+    t.to_s("%B %C, %Y")
   end
 end

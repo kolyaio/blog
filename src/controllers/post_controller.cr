@@ -1,5 +1,5 @@
 class PostController < ApplicationController
-
+  
   def index
     posts = Post.all
     render("index.ecr")

@@ -40,6 +40,10 @@ dependencies:
   citrine-i18n:
     github: amberframework/citrine-i18n
     version: 0.3.2
+  
+  time_format:
+    github: vladfaust/time_format.cr
+    version: 0.1.1
 
 development_dependencies:
  garnet_spec:
