@@ -3,7 +3,7 @@ This is a little project that I trying to build a blog using the amber framework
 
 And by the way sorry for the unoriginal name, I will think about it later, first I need it to be functional. 
 
-Currently it running on [koly.blog(http://koly.blog/)], I will update as the proccess of development progresses, as you can see currently it is it's early stages! 
+Currently it running on [koly.blog](http://koly.blog/), I will update as the proccess of development progresses, as you can see currently it is it's early stages! 
 
 
 [![Amber Framework](https://img.shields.io/badge/using-amber_framework-orange.svg)](https://amberframework.org/)
