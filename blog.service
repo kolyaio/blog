@@ -1,0 +1,12 @@
+[Unit]
+
+Description=Run blog exectuable for the blog
+After=network.target
+
+[Service]
+Type=simple
+User=kolyblog
+WorkingDirectory=/home/kolyblog/blog
+Environment="AMBER_ENV=production"
+ExecStart=/home/kolyblog/blog/bin/blog
+Restart=always
