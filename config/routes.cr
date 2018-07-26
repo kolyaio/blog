@@ -29,11 +29,11 @@ Amber::Server.configure do
   end
 
   routes :web do
-    # posts 
+    # posts
     resources "/posts", PostController, except: [index]
     get "/", PostController, :index
 
-    # user 
+    # user
     get "/profile", UserController, :show
     get "/profile/edit", UserController, :edit
     patch "/profile", UserController, :update
