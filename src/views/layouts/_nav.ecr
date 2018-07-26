@@ -1,12 +1,7 @@
-<%- active = context.request.path == "/" ? "active" : "" %>
-<a class="nav-item <%= active %>" href="/">Home</a>
 <%- if (current_user = context.current_user) %>
-  <a class="nav-item nav-item-auth nav-item-auth-signout" href="/signout">| Sign Out</a>
-  <%- active = context.request.path == "/profile" ? "active" : "" %>
-  <a class="nav-item nav-item-auth nav-item-auth-profile <%= active %>" href="/profile"><%= current_user.email %></a>
+  <a class="mdl-navigation__link nav-item-auth nav-item-auth-signout" href="/signout">| Sign Out</a>
+  <a class="mdl-navigation__link nav-item-auth nav-item-auth-profile" href="/profile"><%= current_user.email %></a>
 <%- else %>
-  <%- active = context.request.path == "/signup" ? "active" : "" %>
-  <a class="nav-item nav-item-auth nav-item-auth-signup <%= active %>" href="/signup">| Sign Up</a>
-  <%- active = context.request.path == "/signin" ? "active" : "" %>
-  <a class="nav-item nav-item-auth nav-item-auth-signin <%= active %>" href="/signin">| Sign In</a>
+  <a class="mdl-navigation__link nav-item-auth nav-item-auth-signup" href="/signup">| Sign Up</a>
+  <a class="mdl-navigation__link nav-item-auth nav-item-auth-signin" href="/signin">| Sign In</a>
 <%- end %>
