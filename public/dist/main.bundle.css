@@ -40,9 +40,6 @@ body {
 .create-card-wide.mdl-card {
   width: 800px; }
 
-.edit-card-wide.mdl-card {
-  width: 800px; }
-
 .show-card-wide.mdl-card {
   width: 800px;
   margin: 0 auto; }
@@ -94,5 +91,37 @@ body {
 
 .profile-card-wide > .mdl-card__menu {
   color: #fff; }
+
+.new-post-card-wide.mdl-card {
+  width: 800px;
+  margin: 0 auto; }
+
+.new-post-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url(/dist/images/transparent.jpg) center/cover; }
+
+.new-post-card-wide > .mdl-card__menu {
+  color: #fff; }
+
+.new-post-card-wide .content p {
+  font-size: 16px;
+  font-weight: 28px; }
+
+.edit-card-wide.mdl-card {
+  width: 800px;
+  margin: 0 auto; }
+
+.edit-card-wide.mdl-card > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url(/dist/images/transparent.jpg) center/cover; }
+
+.edit-card-wide > .mdl-card__menu {
+  color: #fff; }
+
+.edit-card-wide .content p {
+  font-size: 16px;
+  font-weight: 28px; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLmJ1bmRsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/

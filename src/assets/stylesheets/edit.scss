@@ -1,0 +1,19 @@
+.edit-card-wide.mdl-card {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+.edit-card-wide.mdl-card  > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('../images/transparent.jpg') center / cover;
+}
+
+.edit-card-wide > .mdl-card__menu {
+    color: #fff;
+}
+
+.edit-card-wide .content p {
+    font-size: 16px;
+    font-weight: 28px;
+}

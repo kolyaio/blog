@@ -1,0 +1,18 @@
+.new-post-card-wide.mdl-card {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+.new-post-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('../images/transparent.jpg') center / cover;
+}
+.new-post-card-wide > .mdl-card__menu {
+    color: #fff;
+}
+
+.new-post-card-wide .content p {
+    font-size: 16px;
+    font-weight: 28px;
+}

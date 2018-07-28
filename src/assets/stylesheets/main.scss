@@ -50,14 +50,14 @@ body {
   width: 800px;
 }
 
-.edit-card-wide.mdl-card {
-  width: 800px;
-}
-
 @import "show.scss";
 
 @import "login.scss";
 
 @import "registration.scss";
 
-@import "profile.scss"
+@import "profile.scss";
+
+@import "new-post.scss";
+
+@import "edit.scss";
