@@ -7,7 +7,7 @@ body {
 }
 
 .blog-layout-transparent .mdl-layout__header,
-.blog-layout-transparent .mdl-layout__drawer-button, .blog-layout-transparent a {
+.blog-layout-transparent .mdl-layout__drawer-button, .blog-layout-transparent .mdl-layout__header a {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
   color: #000;
@@ -56,5 +56,6 @@ body {
 
 @import "show.scss";
 
+@import "login.scss";
 
-
+@import "registration.scss";

@@ -1,0 +1,13 @@
+.login-card-wide {
+    max-width:1000px;
+    margin: 0 auto;
+}
+
+.login-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('../images/transparent.jpg') center / cover;
+}
+.login-card-wide > .mdl-card__menu {
+    color: #fff;
+}

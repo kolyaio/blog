@@ -5,7 +5,7 @@ body {
   background: url(/dist/images/transparent.jpg) center/cover; }
 
 .blog-layout-transparent .mdl-layout__header,
-.blog-layout-transparent .mdl-layout__drawer-button, .blog-layout-transparent a {
+.blog-layout-transparent .mdl-layout__drawer-button, .blog-layout-transparent .mdl-layout__header a {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
   color: #000;
@@ -58,5 +58,29 @@ body {
 .show-card-wide .content p {
   font-size: 16px;
   font-weight: 28px; }
+
+.login-card-wide {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.login-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url(/dist/images/transparent.jpg) center/cover; }
+
+.login-card-wide > .mdl-card__menu {
+  color: #fff; }
+
+.registration-card-wide {
+  max-width: 800px;
+  margin: 0 auto; }
+
+.registration-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url(/dist/images/transparent.jpg) center/cover; }
+
+.registration-card-wide > .mdl-card__menu {
+  color: #fff; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLmJ1bmRsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
