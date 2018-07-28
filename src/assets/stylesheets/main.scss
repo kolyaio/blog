@@ -1,5 +1,5 @@
 .blog-layout-transparent {
-    background: url('/dist/images/transparent.jpg') center / cover;
+    background: url('../images/transparent.jpg') center / cover;
 }
 
 .blog-layout-transparent .mdl-layout__header,
@@ -16,7 +16,7 @@
 .post-card-wide > .mdl-card__title {
   color: #fff;
   height: 176px;
-  background: url('/dist/images/transparent.jpg') center / cover;
+  background: url('../images/transparent.jpg') center / cover;
 }
 
 .post-card-wide > .mdl-card__menu {
@@ -34,4 +34,9 @@
   margin-right: 40px;
   margin-bottom: 40px;
   z-index: 900;
+}
+
+
+.login-card-wide.mdl-card {
+  width: 800px;
 }

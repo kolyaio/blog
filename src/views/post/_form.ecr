@@ -6,19 +6,25 @@
   </ul>
 <%- end %>
 
-<%- action = (post.id ? "/posts/" + post.id.to_s : "/posts") %>
-<form action="<%= action %>" method="post">
-  <%= csrf_tag %>
-  <%- if post.id %>
-  <input type="hidden" name="_method" value="patch" />
-  <%- end %>
+<div class="login-card-wide mdl-card mdl-shadow--2dp mdl-grid">
+  <%- action = (post.id ? "/posts/" + post.id.to_s : "/posts") %>
+  <form action="<%= action %>" method="post">
+    <%= csrf_tag %>
+    <%- if post.id %>
+    <input type="hidden" name="_method" value="patch" />
+    <%- end %>
 
-  <div class="form-group">
-    <%= text_field(name: "title", value: post.title, placeholder: "Title", class: "form-control") -%>
-  </div>
-  <div class="form-group">
-    <%= text_area(name: "body", content: post.body, placeholder: "Body", class: "form-control", size: "30x10") -%>
-  </div>
-  <%= submit("Submit", class: "btn btn-primary btn-sm") -%>
-  <%= link_to("back", "/posts", class: "btn btn-light btn-sm") -%>
-</form>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <label class="mdl-textfield__label" for="title">Title</label>
+      <%= text_field(name: "title", value: post.title, class: "mdl-textfield__input") -%>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+      <label class="mdl-textfield__label" for="body">Content</label>
+      <%= text_area(name: "body", content: post.body, class: "mdl-textfield__input", rows: "20", cols: "100") -%>
+    </div>
+    <div class="mdl-cell mdl-cell--12-col">
+      <%= submit("Submit", class: "mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect") -%>
+      <%= link_to("back", "/posts", class: "mdl-button mdl-js-button") -%>
+    </div>
+  </form>
+</div>
