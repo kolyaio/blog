@@ -1,11 +1,18 @@
+body {
+  font-family: 'Roboto', 'Helvetica', sans-serif; }
+
 .blog-layout-transparent {
   background: url(/dist/images/transparent.jpg) center/cover; }
 
 .blog-layout-transparent .mdl-layout__header,
-.blog-layout-transparent .mdl-layout__drawer-button {
+.blog-layout-transparent .mdl-layout__drawer-button, .blog-layout-transparent a {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
-  color: white; }
+  color: #000;
+  text-decoration: none; }
+
+.mdl-navigation .mdl-button {
+  margin-right: 1rem; }
 
 .post-card-wide.mdl-card {
   width: 512px; }
@@ -30,7 +37,26 @@
   margin-bottom: 40px;
   z-index: 900; }
 
-.login-card-wide.mdl-card {
+.create-card-wide.mdl-card {
   width: 800px; }
+
+.edit-card-wide.mdl-card {
+  width: 800px; }
+
+.show-card-wide.mdl-card {
+  width: 800px;
+  margin: 0 auto; }
+
+.show-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url(/dist/images/transparent.jpg) center/cover; }
+
+.show-card-wide > .mdl-card__menu {
+  color: #fff; }
+
+.show-card-wide .content p {
+  font-size: 16px;
+  font-weight: 28px; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLmJ1bmRsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/

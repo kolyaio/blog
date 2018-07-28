@@ -1,12 +1,20 @@
+body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
 .blog-layout-transparent {
     background: url('../images/transparent.jpg') center / cover;
 }
 
 .blog-layout-transparent .mdl-layout__header,
-.blog-layout-transparent .mdl-layout__drawer-button {
+.blog-layout-transparent .mdl-layout__drawer-button, .blog-layout-transparent a {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
-  color: white;
+  color: #000;
+  text-decoration: none;
+}
+.mdl-navigation .mdl-button {
+  margin-right: 1rem;
 }
 
 .post-card-wide.mdl-card {
@@ -36,7 +44,17 @@
   z-index: 900;
 }
 
+// Posts
 
-.login-card-wide.mdl-card {
+.create-card-wide.mdl-card {
   width: 800px;
 }
+
+.edit-card-wide.mdl-card {
+  width: 800px;
+}
+
+@import "show.scss";
+
+
+
