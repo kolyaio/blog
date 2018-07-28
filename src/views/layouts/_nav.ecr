@@ -1,7 +1,7 @@
 <%- if (current_user = context.current_user) %>
-  <a class="mdl-navigation__link nav-item-auth nav-item-auth-signout" href="/signout">| Sign Out</a>
-  <a class="mdl-navigation__link nav-item-auth nav-item-auth-profile" href="/profile"><%= current_user.email %></a>
+  <a class="mdl-navigation__link" href="/signout">Sign Out</a>
+  <a class="mdl-navigation__link" href="/profile"><%= current_user.email %></a>
 <%- else %>
-  <a class="mdl-navigation__link nav-item-auth nav-item-auth-signup" href="/signup">| Sign Up</a>
-  <a class="mdl-navigation__link nav-item-auth nav-item-auth-signin" href="/signin">| Sign In</a>
+  <a class="mdl-navigation__link" href="/signup">Sign Up</a>
+  <a class="mdl-navigation__link" href="/signin">Sign In</a>
 <%- end %>

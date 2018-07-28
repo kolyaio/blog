@@ -1,5 +1,5 @@
 .blog-layout-transparent {
-    background: url('../assets/images/transparent.jpg') center / cover;
+    background: url('/dist/images/transparent.jpg') center / cover;
 }
 
 .blog-layout-transparent .mdl-layout__header,
@@ -7,4 +7,31 @@
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
   color: white;
+}
+
+.post-card-wide.mdl-card {
+  width: 512px;
+}
+
+.post-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('/dist/images/transparent.jpg') center / cover;
+}
+
+.post-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+.post-cards {
+  max-width: 80%;
+}
+
+.post-new-btn {
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  z-index: 900;
 }
