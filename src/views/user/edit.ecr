@@ -1,18 +1,29 @@
-<h1>Edit Profile</h1>
 
-<%- if user.errors %>
-  <ul class="errors">
-  <%- user.errors.each do |error| %>
-    <li><%= error.to_s %></li>
-  <%- end %>
-  </ul>
-<%- end %>
-
-<form action="/profile" method="patch">
-  <%= csrf_tag %>
-  <div class="form-group">
-    <input class="form-control" type="email" name="email" placeholder="Email" value="<%= user.email %>" />
+<div class="profile-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+     <h3>Settings & Details</h3>
   </div>
-  <%= submit("Update", class: "btn btn-primary btn-sm") %>
-  <%= link_to("profile", "/profile", class: "btn btn-light btn-sm") %>
-</form>
+
+    <%- if user.errors %>
+      <ul class="errors">
+      <%- user.errors.each do |error| %>
+        <li><%= error.to_s %></li>
+      <%- end %>
+      </ul>
+    <%- end %>
+
+  <div class="mdl-grid">
+    <form action="/profile" method="patch">
+      <%= csrf_tag %>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+        <label class="mdl-textfield__label" for="email">Email</label>
+        <input class="mdl-textfield__input" type="email" name="email" value="<%= user.email %>" />
+      </div>
+      
+      <div class="mdl-cell mdl-cell--12-col">
+        <%= submit("Update", class: "mdl-button mdl-js-button mdl-button--primary") %> &nbsp;
+        <%= link_to("profile", "/profile", class: "mdl-button mdl-js-button") %>
+      </div>
+    </form>
+  </div>
+</div>

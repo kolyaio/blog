@@ -1,0 +1,13 @@
+.profile-card-wide {
+    max-width:800px;
+    margin: 0 auto;
+}
+
+.profile-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('../images/transparent.jpg') center / cover;
+}
+.profile-card-wide > .mdl-card__menu {
+    color: #fff;
+}

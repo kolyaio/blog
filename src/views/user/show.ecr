@@ -1,5 +1,10 @@
-<h1>Profile</h1>
-<p>
-  <%= user.email %>
-  <%= link_to("edit", "/profile/edit", class: "btn btn-success btn-sm") %>
-</p>
+<div class="profile-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+     <h3>Profile</h3>
+  </div>
+  <p style="margin-left: 20px; margin-top: 5px">
+    <strong>Email Adress: &nbsp;</strong><%= user.email %>
+  </p>
+
+  <%= link_to("Settings & Details", "/profile/edit", class: "mdl-button mdl-js-button mdl-button--primary") %>
+</div>
