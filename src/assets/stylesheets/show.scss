@@ -1,5 +1,5 @@
 .show-card-wide.mdl-card {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -11,7 +11,6 @@
 .show-card-wide > .mdl-card__menu {
     color: #fff;
 }
-
 .show-card-wide .content p {
     font-size: 16px;
     font-weight: 28px;

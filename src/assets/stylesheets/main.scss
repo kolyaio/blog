@@ -18,7 +18,7 @@ body {
 }
 
 .post-card-wide.mdl-card {
-  width: 512px;
+  width: 400px;
 }
 
 .post-card-wide > .mdl-card__title {
@@ -34,13 +34,23 @@ body {
   max-width: 80%;
 }
 
+
+@media (max-width: 350px) {
+  .mdl-layout__drawer-button {
+    width: 32px;
+    height: 32px;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
 .post-new-btn {
   position: fixed;
   display: block;
   right: 0;
   bottom: 0;
-  margin-right: 40px;
-  margin-bottom: 40px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   z-index: 900;
 }
 
@@ -50,6 +60,30 @@ body {
   width: 800px;
 }
 
+.mdl-layout__content {
+  margin-top: 30px;
+}
+
+.post-description {
+  position: relative;
+  height: 3.6em; /* exactly three lines */
+}
+.mdl-card__supporting-text  p{
+  margin: 0;
+}
+.post-description:after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.2em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+}
+.post-actions {
+  margin-top:15px;
+}
 @import "show.scss";
 
 @import "login.scss";

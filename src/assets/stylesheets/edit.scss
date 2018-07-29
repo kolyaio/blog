@@ -1,7 +1,7 @@
 .edit-card-wide.mdl-card {
-    width: 800px;
+    max-width: 600px;
     margin: 0 auto;
-  }
+}
 
 .edit-card-wide.mdl-card  > .mdl-card__title {
     color: #fff;
@@ -16,4 +16,8 @@
 .edit-card-wide .content p {
     font-size: 16px;
     font-weight: 28px;
+}
+
+.edit-post {
+    margin-top: 20px;
 }

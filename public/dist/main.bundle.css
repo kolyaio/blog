@@ -15,7 +15,7 @@ body {
   margin-right: 1rem; }
 
 .post-card-wide.mdl-card {
-  width: 512px; }
+  width: 400px; }
 
 .post-card-wide > .mdl-card__title {
   color: #fff;
@@ -28,20 +28,51 @@ body {
 .post-cards {
   max-width: 80%; }
 
+@media (max-width: 350px) {
+  .mdl-layout__drawer-button {
+    width: 32px;
+    height: 32px;
+    padding: 0px;
+    margin: 0px; } }
+
 .post-new-btn {
   position: fixed;
   display: block;
   right: 0;
   bottom: 0;
-  margin-right: 40px;
-  margin-bottom: 40px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   z-index: 900; }
 
 .create-card-wide.mdl-card {
   width: 800px; }
 
+.mdl-layout__content {
+  margin-top: 30px; }
+
+.post-description {
+  position: relative;
+  height: 3.6em;
+  /* exactly three lines */ }
+
+.mdl-card__supporting-text p {
+  margin: 0; }
+
+.post-description:after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.2em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%); }
+
+.post-actions {
+  margin-top: 15px; }
+
 .show-card-wide.mdl-card {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto; }
 
 .show-card-wide > .mdl-card__title {
@@ -93,7 +124,7 @@ body {
   color: #fff; }
 
 .new-post-card-wide.mdl-card {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto; }
 
 .new-post-card-wide > .mdl-card__title {
@@ -108,8 +139,11 @@ body {
   font-size: 16px;
   font-weight: 28px; }
 
+.new-post {
+  margin-top: 20px; }
+
 .edit-card-wide.mdl-card {
-  width: 800px;
+  max-width: 600px;
   margin: 0 auto; }
 
 .edit-card-wide.mdl-card > .mdl-card__title {
@@ -123,5 +157,8 @@ body {
 .edit-card-wide .content p {
   font-size: 16px;
   font-weight: 28px; }
+
+.edit-post {
+  margin-top: 20px; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLmJ1bmRsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
