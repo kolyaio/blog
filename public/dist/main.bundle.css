@@ -72,7 +72,7 @@ body {
   margin-top: 15px; }
 
 .show-card-wide.mdl-card {
-  max-width: 800px;
+  width: 90%;
   margin: 0 auto; }
 
 .show-card-wide > .mdl-card__title {
@@ -86,6 +86,13 @@ body {
 .show-card-wide .content p {
   font-size: 16px;
   font-weight: 28px; }
+
+.show-post {
+  margin-top: 20px; }
+
+@media (max-width: 364px) {
+  .show-post .mdl-button:last-child {
+    margin-top: 10px; } }
 
 .login-card-wide {
   max-width: 1000px;
@@ -112,7 +119,7 @@ body {
   color: #fff; }
 
 .profile-card-wide {
-  max-width: 800px;
+  max-width: 80%;
   margin: 0 auto; }
 
 .profile-card-wide > .mdl-card__title {
@@ -122,6 +129,9 @@ body {
 
 .profile-card-wide > .mdl-card__menu {
   color: #fff; }
+
+.profile-card {
+  margin-top: 30px; }
 
 .new-post-card-wide.mdl-card {
   max-width: 800px;
@@ -143,7 +153,7 @@ body {
   margin-top: 20px; }
 
 .edit-card-wide.mdl-card {
-  max-width: 600px;
+  max-width: 90%;
   margin: 0 auto; }
 
 .edit-card-wide.mdl-card > .mdl-card__title {

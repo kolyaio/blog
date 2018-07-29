@@ -1,4 +1,4 @@
-<div class="mdl-grid">
+<div class="mdl-grid show-post">
     <div class="blog-post show-card-wide mdl-card mdl-shadow--2dp">
         <div class="mdl-card__title">
           <h2 class="mdl-card__title-text"><%= link_to("#{post.title}", "/posts/#{post.id}") -%></h2>
@@ -10,9 +10,9 @@
           <%=post.body %>
         </div>
         <div class="mdl-cell mdl-cell--12-col">
-          <%= link_to("back", "/posts", class: "mdl-button mdl-js-button mdl-button--raised mdl-button--accent") -%>
-          <%= link_to("edit", "/posts/#{post.id}/edit", class: "mdl-button mdl-js-button mdl-button--raised mdl-button--accent") -%>
-          <%= link_to("delete", "/posts/#{post.id}?_csrf=#{csrf_token}", "data-method": "delete", "data-confirm": "Are you sure?", class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent") -%>
+            <%= link_to("back", "/posts", class: "mdl-button mdl-js-button mdl-button--raised mdl-button--accent") -%>
+            <%= link_to("edit", "/posts/#{post.id}/edit", class: "mdl-button mdl-js-button mdl-button--raised mdl-button--accent") -%>
+            <%= link_to("delete", "/posts/#{post.id}?_csrf=#{csrf_token}", "data-method": "delete", "data-confirm": "Are you sure?", class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent") -%>
         </div>
       </div>
 </div>
