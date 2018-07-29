@@ -1,7 +1,7 @@
 class PostController < ApplicationController
 
   def index
-    posts = Post.all
+    posts = Post.all("ORDER BY created_at DESC")
     render("index.ecr")
   end
 
