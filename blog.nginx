@@ -1,0 +1,18 @@
+# Server Settings for nginx and amber framework 
+
+server {
+	listen 80;
+	listen [::]:80;
+
+	root /var/www/html;
+
+	index index.html index.htm
+
+	server_name localhost.localdomain # your domain preferable
+
+	location / {
+	
+		proxy_pass http://localhost:8080; # The application local server
+
+	}
+}
