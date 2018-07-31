@@ -2,7 +2,7 @@ body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
-.blog-layout-transparent {
+body, html {
     background: url('../images/transparent.jpg') center / cover;
 }
 
@@ -18,8 +18,16 @@ body {
 }
 
 .post-card-wide.mdl-card {
-  width: 400px;
+  width: 35rem;
 }
+
+@media (max-width: 970px) {
+  .post-card-wide.mdl-card {
+    width: 50em;
+  }
+}
+
+
 
 .post-card-wide > .mdl-card__title {
   color: #fff;
@@ -31,17 +39,11 @@ body {
   color: #fff;
 }
 .post-cards {
-  max-width: 80%;
-}
-
-
-@media (max-width: 350px) {
-  .mdl-layout__drawer-button {
-    width: 32px;
-    height: 32px;
-    padding: 0px;
-    margin: 0px;
-  }
+  max-width: 90%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
 }
 
 .post-new-btn {
@@ -67,9 +69,6 @@ body {
 .post-description {
   position: relative;
   height: 3.6em; /* exactly three lines */
-}
-.mdl-card__supporting-text  p{
-  margin: 0;
 }
 .post-description:after {
   content: "";
