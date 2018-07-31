@@ -14,16 +14,16 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
   </head>
   <body>
-    <div class="blog-layout-transparent mdl-layout mdl-js-layout">
-      <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="blog-layout mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--scroll">
         <div class="mdl-layout__header-row">
         <!-- Title -->
         <span class="mdl-layout-title"><a href="/">Koly.Blog</a></span>
         <!-- Add spacer, to align navigation to the right -->
         <div class="mdl-layout-spacer"></div>
         <!-- Navigation -->
-        <nav class="mdl-navigation">
-            <%= render(partial: "layouts/_nav.ecr") %>
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <%=render(partial: "layouts/_nav.ecr") %>
         </nav>
       </div>
     </header>
@@ -31,7 +31,7 @@
     <div class="mdl-layout__drawer">
       <span class="mdl-layout-title">Koly.Blog</span>
         <nav class="mdl-navigation">
-          <%= render(partial: "layouts/_sidebar.ecr") %>
+          <%=render(partial: "layouts/_sidebar.ecr") %>
         </nav>
       </div>
 

@@ -3,15 +3,19 @@ body {
 }
 
 body, html {
-    background: url('../images/transparent.jpg') center / cover;
+    background: url('../images/transparent.jpg') center / cover ;
 }
 
-.blog-layout-transparent .mdl-layout__header,
-.blog-layout-transparent .mdl-layout__drawer-button, .blog-layout-transparent .mdl-layout__header a {
+.blog-layout .mdl-layout__header,
+.blog-layout .mdl-layout__drawer-button,  .mdl-layout__header a {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
   color: #000;
   text-decoration: none;
+}
+
+.mdl-layout__header {
+  background: rgba(255, 255, 255, .5)
 }
 .mdl-navigation .mdl-button {
   margin-right: 1rem;
@@ -64,10 +68,6 @@ body, html {
 
 .create-card-wide.mdl-card {
   width: 800px;
-}
-
-.mdl-layout__content {
-  margin-top: 30px;
 }
 
 .post-description {
