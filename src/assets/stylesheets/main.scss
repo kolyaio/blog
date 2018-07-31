@@ -18,7 +18,7 @@ body, html {
 }
 
 .post-card-wide.mdl-card {
-  width: 35rem;
+  width: 30rem;
 }
 
 @media (max-width: 970px) {
@@ -27,7 +27,11 @@ body, html {
   }
 }
 
-
+@media(min-width: 970px) and (max-width: 1440px) {
+  .post-card-wide.mdl-card {
+    width: 20em 
+  }
+}
 
 .post-card-wide > .mdl-card__title {
   color: #fff;
