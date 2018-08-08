@@ -21,6 +21,14 @@ body, html {
   margin-right: 1rem;
 }
 
+.content-card {
+  max-width: 90%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
+}
+
 @import "posts.scss";
 
 @import "show.scss";

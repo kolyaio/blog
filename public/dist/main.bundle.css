@@ -17,6 +17,13 @@ body, html {
 .mdl-navigation .mdl-button {
   margin-right: 1rem; }
 
+.content-card {
+  max-width: 90%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap; }
+
 .post-card-wide.mdl-card {
   width: 30rem; }
 
@@ -30,18 +37,11 @@ body, html {
 
 .post-card-wide > .mdl-card__title {
   color: #fff;
-  height: 176px;
+  height: 10em;
   background: url(/dist/images/transparent.jpg) center/cover; }
 
 .post-card-wide > .mdl-card__menu {
   color: #fff; }
-
-.post-cards {
-  max-width: 90%;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  flex-flow: row wrap; }
 
 .post-new-btn {
   position: fixed;
@@ -96,9 +96,8 @@ body, html {
   .show-post .mdl-button:last-child {
     margin-top: 10px; } }
 
-.login-card-wide {
-  max-width: 1000px;
-  margin: 0 auto; }
+.login-card {
+  max-width: 70%; }
 
 .login-card-wide > .mdl-card__title {
   color: #fff;
@@ -108,9 +107,8 @@ body, html {
 .login-card-wide > .mdl-card__menu {
   color: #fff; }
 
-.registration-card-wide {
-  max-width: 800px;
-  margin: 0 auto; }
+.registration-card {
+  max-width: 70%; }
 
 .registration-card-wide > .mdl-card__title {
   color: #fff;

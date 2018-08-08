@@ -1,30 +1,32 @@
-<div class="registration-card-wide mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title">
-      <h3>Sign Up</h3>
-  </div>
-
-  <%- if user.errors %>
-    <ul class="errors">
-    <%- user.errors.each do |error| %>
-      <li><%= error.to_s %></li>
+<div class="mdl-grid registration-card content-card">
+  <div class="registration-card-wide mdl-card mdl-shadow--2dp md-cell  mdl-cell mdl-cell--12-col">
+    <div class="mdl-card__title">
+        <h3>Sign Up</h3>
+    </div>
+  
+    <%- if user.errors %>
+      <ul class="errors">
+      <%- user.errors.each do |error| %>
+        <li><%= error.to_s %></li>
+      <%- end %>
+      </ul>
     <%- end %>
-    </ul>
-  <%- end %>
-
-  <form action="/registration" method="post">
-    <%= csrf_tag %>
-    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
-      <label class="mdl-textfield__label" for="email">Email</label>
-      <input class="mdl-textfield__input" type="email" name="email"/>
-    </div>
-    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
-      <label class="mdl-textfield__label" for="password">Password</label>
-      <input class="mdl-textfield__input" type="password" name="password" />
-    </div>
-     <div class="mdl-cell mdl-cell--12-col">
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" type="submit">Sign Up</button>
-     </div>
-  </form>
-
-  <%= link_to("Already have an account?", "/signin", class: "mdl-button mdl-js-button mdl-button--primary") -%>
+  
+    <form action="/registration" method="post">
+      <%= csrf_tag %>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+        <label class="mdl-textfield__label" for="email">Email</label>
+        <input class="mdl-textfield__input" type="email" name="email"/>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
+        <label class="mdl-textfield__label" for="password">Password</label>
+        <input class="mdl-textfield__input" type="password" name="password" />
+      </div>
+       <div class="mdl-cell mdl-cell--12-col">
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" type="submit">Sign Up</button>
+       </div>
+    </form>
+  
+    <%= link_to("Already have an account?", "/signin", class: "mdl-button mdl-js-button mdl-button--primary") -%>
+  </div>
 </div>
