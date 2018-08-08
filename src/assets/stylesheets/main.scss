@@ -21,73 +21,8 @@ body, html {
   margin-right: 1rem;
 }
 
-.post-card-wide.mdl-card {
-  width: 30rem;
-}
+@import "posts.scss";
 
-@media (max-width: 970px) {
-  .post-card-wide.mdl-card {
-    width: 50em;
-  }
-}
-
-@media(min-width: 970px) and (max-width: 1440px) {
-  .post-card-wide.mdl-card {
-    width: 20em 
-  }
-}
-
-.post-card-wide > .mdl-card__title {
-  color: #fff;
-  height: 176px;
-  background: url('../images/transparent.jpg') center / cover;
-}
-
-.post-card-wide > .mdl-card__menu {
-  color: #fff;
-}
-.post-cards {
-  max-width: 90%;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  flex-flow: row wrap;
-}
-
-.post-new-btn {
-  position: fixed;
-  display: block;
-  right: 0;
-  bottom: 0;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  z-index: 900;
-}
-
-// Posts
-
-.create-card-wide.mdl-card {
-  width: 800px;
-}
-
-.post-description {
-  position: relative;
-  height: 3.6em; /* exactly three lines */
-}
-.post-description:after {
-  content: "";
-  text-align: right;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 70%;
-  height: 1.2em;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
-}
-
-.post-actions {
-  margin-top:15px;
-}
 @import "show.scss";
 
 @import "login.scss";
