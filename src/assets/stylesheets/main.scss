@@ -12,10 +12,15 @@ body, html {
      your background is light. */
   color: #000;
   text-decoration: none;
+  
+}
+.mdl-layout__drawer-button {
+  background: none !important;
 }
 
+
 .mdl-layout__header {
-  background: rgba(255, 255, 255, .5)
+  background: rgba(255, 255, 255, .5);
 }
 .mdl-navigation .mdl-button {
   margin-right: 1rem;

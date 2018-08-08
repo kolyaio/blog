@@ -11,6 +11,9 @@ body, html {
   color: #000;
   text-decoration: none; }
 
+.mdl-layout__drawer-button {
+  background: none !important; }
+
 .mdl-layout__header {
   background: rgba(255, 255, 255, 0.5); }
 
