@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Koly.Blog</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-amber.min.css" />
+    <link rel="stylesheet" href="/dist/main.bundle.css">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+  <body>
+    <div class="blog-layout mdl-layout mdl-js-layout mdl-layout--fixed-header ">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title"><a href="/">Koly.Blog</a></span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <%=render(partial: "layouts/_nav.ecr") %>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Koly.Blog</span>
+        <nav class="mdl-navigation">
+          <%=render(partial: "layouts/_sidebar.ecr") %>
+        </nav>
+      </div>
+
+      <main class="mdl-layout__content">
+        <%=content%>
+      </main>
+    </div>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="/dist/main.bundle.js"></script>
+  </body>
+</html>

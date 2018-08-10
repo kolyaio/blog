@@ -13,11 +13,4 @@ class PostController < ApplicationController
       redirect_to "/"
     end
   end
-  
-  def post_params
-    params.validation do
-      required(:title) { |f| !f.nil? }
-      required(:body) { |f| !f.nil? }
-    end
-  end
 end

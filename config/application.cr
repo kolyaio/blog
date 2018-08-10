@@ -5,7 +5,9 @@ require "../src/models/**"
 require "../src/pipes/**"
 
 require "../src/controllers/application_controller"
+
 require "../src/controllers/**"
+require "../src/controllers/Admin/**"
 
 # About Application.cr File
 #
@@ -29,7 +31,7 @@ Amber::Server.configure do |settings|
   # Name: A name that identifies this application. This is not internally
   # used by the framework.
   #
-  settings.name = "Blog in Amber"
+  settings.name = "Koly.Blog"
   #
   #
   # Colorize Logging: specifies whether or not to use ANSI color codes

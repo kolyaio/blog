@@ -1,9 +1,7 @@
 require "jasper_helpers"
-
 class AdminController < Amber::Controller::Base
   include JasperHelpers
   LAYOUT = "admin.ecr"
-
 
   def current_user
     context.current_user
