@@ -1,4 +1,4 @@
-class PostController < AdminController
+class AdminPostController < AdminController
 
   def index
     posts = Post.all("ORDER BY created_at DESC")

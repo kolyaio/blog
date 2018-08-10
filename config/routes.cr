@@ -29,9 +29,7 @@ Amber::Server.configure do
   end
 
   routes :web do
-    # posts
-    resources "/posts", PostController, except: [index]
-    get "/", PostController, :index
+    resources "/user", PostsController, only: [:index, :show]
 
     # user
     get "/profile", UserController, :show
@@ -42,6 +40,10 @@ Amber::Server.configure do
     get "/signout", SessionController, :delete
     get "/signup", RegistrationController, :new
     post "/registration", RegistrationController, :create
+
+  end
+  routes :web, "/admin" do
+    resource "/posts", AdminPostsController
   end
 
   routes :api do
