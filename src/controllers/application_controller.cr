@@ -21,7 +21,7 @@ class ApplicationController < Amber::Controller::Base
   end
 
   private def format_date( date : Time | Nil )
-    t = Time.parse("2018-07-06 16:00:57 UTC", "%F %T %z");
+    t = Time.parse("2018-07-06 16:00:57 UTC", "%F %T %z", Time::Location.load("Asia/Jerusalem"));
     t.to_s("%B %C, %Y")
   end
 end

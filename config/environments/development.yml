@@ -1,14 +1,13 @@
 secret_key_base: QjkV9KDBTMbkzekCdD-ZqjhRR-KQln3iGy2Kq6aKOy0
 port: 3000
 name: blog
+
 logging:
   severity: debug
   colorize: true
   filter:
     - password
     - confirm_password
-  skip:
-    -
   context:
     - request
     - session
@@ -22,7 +21,7 @@ process_count: 1
 # ssl_key_file:
 # ssl_cert_file:
 redis_url: "redis://localhost:6379"
-database_url: postgres://postgres:@localhost:5432/blog_development
+database_url: "postgres://postgres:@localhost:5432/blog_development"
 session:
   key: amber.session
   store: signed_cookie
